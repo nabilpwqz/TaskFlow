@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="tfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="innerGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.15" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#B45309" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#tfGradient)" filter="url(#shadow)" />
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#innerGlow)" />
+
+  <path d="M16 38 L32 46 L48 38" fill="none" stroke="#090D16" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
+  <path d="M16 30 L32 38 L48 30" fill="none" stroke="#090D16" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+  <polygon points="32,14 48,22 32,30 16,22" fill="#090D16" stroke="#090D16" stroke-width="1.5" stroke-linejoin="round" />
+  <circle cx="32" cy="22" r="3.2" fill="#FBBF24" />
+</svg>
